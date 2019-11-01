@@ -20,9 +20,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git@github.com:JoeKerouac/java-parent.git</connection>
-        <developerConnection>scm:git@github.com:JoeKerouac/java-parent.git</developerConnection>
         <url>https://github.com/JoeKerouac/java-parent</url>
+        <connection>scm:git:https://github.com/JoeKerouac/java-parent.git</connection>
+        <developerConnection>scm:git:https://github.com/JoeKerouac/java-parent.git</developerConnection>
     </scm>
 
     <developers>
