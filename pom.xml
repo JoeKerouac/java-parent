@@ -71,15 +71,6 @@
             </build>
         </profile>
         <profile>
-            <id>local</id>
-            <distributionManagement>
-                <repository>
-                    <id>wggyl</id>
-                    <url>http://192.168.2.222:8081/repository/local-maven</url>
-                </repository>
-            </distributionManagement>
-        </profile>
-        <profile>
             <id>release</id>
             <distributionManagement>
                 <snapshotRepository>
@@ -139,7 +130,9 @@
         <commons.lang.version>3.8.1</commons.lang.version>
         <byte-buddy.version>1.9.3</byte-buddy.version>
         <jacoco.version>0.8.4</jacoco.version>
-        <spring-boot.version>1.5.10.RELEASE</spring-boot.version>
+        <dom4j.version>1.6.1</dom4j.version>
+        <spring-boot.version>2.2.1.RELEASE</spring-boot.version>
+        <!--<spring-boot.version>1.5.10.RELEASE</spring-boot.version>-->
         <maven-compiler-plugin.version>2.3.2</maven-compiler-plugin.version>
         <maven-source-plugin.version>3.0.1</maven-source-plugin.version>
         <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
@@ -303,6 +296,12 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons.lang.version}</version>
+            </dependency>
+            <!-- xml工具 -->
+            <dependency>
+                <groupId>dom4j</groupId>
+                <artifactId>dom4j</artifactId>
+                <version>${dom4j.version}</version>
             </dependency>
 
             <!-- 覆盖率统计 -->
