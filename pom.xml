@@ -311,6 +311,13 @@
                 <version>${jacoco.version}}</version>
             </dependency>
 
+            <!-- 常用加密算法 -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk16</artifactId>
+                <version>1.46</version>
+            </dependency>
+
             <!--spring-boot依赖管理-->
             <dependency>
                 <!-- Import dependency management from Spring Boot -->
