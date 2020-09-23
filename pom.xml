@@ -65,6 +65,10 @@
                         </executions>
                         <configuration>
                             <encoding>${encode}</encoding>
+                            <!-- jdk1.8要加上，1.7要去掉，否则会报错 -->
+                            <additionalJOptions>
+                                <additionalJOption>${javadoc.opts}</additionalJOption>
+                            </additionalJOptions>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -100,6 +104,16 @@
                     </plugin>
                 </plugins>
             </build>
+        </profile>
+        <!-- JDK1.8以及以上需要禁用注释检查 -->
+        <profile>
+            <id>disable-javadoc-doclint</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <properties>
+                <javadoc.opts>-Xdoclint:none</javadoc.opts>
+            </properties>
         </profile>
     </profiles>
 
